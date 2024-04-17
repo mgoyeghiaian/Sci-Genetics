@@ -71,11 +71,12 @@ if(isset($_SESSION['id'])){
                     <div class="row">
                         <div class="col-lg-6">
                             <label for="file">Email</label>
-                            <input class="form-control" type="email" name="email" id="email" placeholder="Email" required/>
+                            <input class="form-control" type="email" name="email" id="email" placeholder="YourEmail@gmail.com" pattern=".+@gmail.com" size="30" required/>
                         </div>
                         <div class="col-lg-6">
                             <label for="file">Mobile</label>
-                            <input class="form-control" type="mobile" name="mobile" id="mobile" placeholder="Mobile"/>
+                            <input class="form-control" type="tel" name="mobile" id="mobile"  placeholder="7123452" pattern="[0-9]{7}"  required/>
+                        
                         </div>
                     </div>
                     <div class="row">
@@ -115,18 +116,29 @@ if(isset($_SESSION['id'])){
                     </div>
                     <div class="row">
                         <div class="col-lg-12">
-                            <input class="form-control out" type="submit" name="pg" id="pg" value="Submit">   
+                            <input class="form-control out" type="submit" name="pg" id="pg" value="Submit" >   
                         </div>
                     </div>
                 </form>
             </div>
         </div>
-
+        <!-- <script>
+    function validate(){
+       var mobile= document.getElementById("mobile").value;
+        if(mobile.length<7)
+  { 
+    // mobile.setCustomValidity('Please enter a number of min 7 characters');
+    console.log("Error: Input must contain at least 7 numbers");
+    // throw new Error("Error: Input must contain at least 7 numbers.");
+  }
+    }
+// </script> -->
     
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="index.js"></script>
+
 </body>
 </html>
 <?php
