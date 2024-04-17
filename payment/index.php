@@ -140,11 +140,7 @@ function validateForm() {
     return true;
 }
 
-   var email=document.getElemenetById("email").value;
-   if(email){
-
-
-   }
+   
 </script>
 
 </body>
