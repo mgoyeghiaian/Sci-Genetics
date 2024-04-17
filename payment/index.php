@@ -71,7 +71,7 @@ if(isset($_SESSION['id'])){
                     <div class="row">
                         <div class="col-lg-6">
                             <label for="file">Email</label>
-                            <input class="form-control" type="email" name="email" id="email" placeholder="YourEmail@gmail.com" pattern=".+@gmail.com" size="30" required/>
+                            <input class="form-control" type="email" name="email" id="email" placeholder="YourEmail@gmail.com" pattern=".*@.*" size="30" required/>
                         </div>
                         <div class="col-lg-6">
                             <label for="file">Mobile</label>
