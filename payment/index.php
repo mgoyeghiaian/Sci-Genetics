@@ -75,7 +75,7 @@ if(isset($_SESSION['id'])){
                            </div>
                         <div class="col-lg-6">
                             <label for="file">Mobile</label>
-                            <input class="form-control" type="text" name="mobile" id="mobile"  placeholder="712345" min="6"  required/>
+                            <input class="form-control" type="text" name="mobile" id="mobile"  placeholder="712345" min="7"  required/>
                             </div>
                     </div>
                     <div class="row">
